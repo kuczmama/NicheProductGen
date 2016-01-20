@@ -1,12 +1,12 @@
 development:
     adapter: mysql2
-    database: niche_development
+    database: ideagen_development
     username: root
     password: pop123
     host: localhost	
 test:
     adapter: mysql2
-    database: niche_test
+    database: ideagen_test
     username: root
     password: pop123
     host: localhost
