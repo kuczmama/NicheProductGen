@@ -7,8 +7,44 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+	<div class="site-wrapper">
 
-<%= yield %>
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+          <div class="masthead clearfix">
+            <div class="inner">
+              <h3 class="masthead-brand"><%= link_to 'Nicheproduct.gen', root_path %></h3>
+              <nav>
+                <ul class="nav masthead-nav">
+                	<li><%= link_to "New Niche", new_niche_path %></li>
+                	<li><%= link_to "New Product", new_product_path %></li>
+                  	<li><a href="http://www.thebauerhour.com/">The Bauer Hour</a></li>
+                  	<li><a href="http://www.answrly.com/">Answrly</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div class="inner cover">
+          	<% flash.each do |message_type, message| %>
+  				<div class="alert alert-<%= message_type %>"><%= message %></div>
+			<% end %>
+			<%= yield %>
+		</div>
+          <div class="mastfoot">
+            <div class="inner">
+              <p>Copyright Nicheproduct.gen</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>`
+
+
 
 </body>
 </html>

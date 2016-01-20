@@ -1,0 +1,2 @@
+module NicheHelper
+end
