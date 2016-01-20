@@ -4,7 +4,7 @@ source 'http://mirror.ops.rhcloud.com/mirror/ruby/'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'
 # Use sqlite3 as the database for Active Record
-gem 'mysql'
+gem 'mysql2'
 gem 'font-awesome-rails'
 gem 'bootstrap-sass', '~> 3.3.5'
 # Use SCSS for stylesheets
