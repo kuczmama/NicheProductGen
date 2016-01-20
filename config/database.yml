@@ -13,10 +13,11 @@ test:
 production:
   adapter: mysql2
   encoding: utf8
-  reconnect: false
-  pool: 5
   database: <%=ENV['OPENSHIFT_APP_NAME']%>
+  pool: 30
+  timeout: 30000
+  checkout_timeout: 30000
+  host: <%=ENV['OPENSHIFT_MYSQL_DB_HOST']%>
+  port: <%=ENV['OPENSHIFT_MYSQL_DB_PORT']%>
   username: <%=ENV['OPENSHIFT_MYSQL_DB_USERNAME']%>
   password: <%=ENV['OPENSHIFT_MYSQL_DB_PASSWORD']%>
-  host:   <%=ENV['OPENSHIFT_MYSQL_DB_HOST']%>
-  port:   <%=ENV['OPENSHIFT_MYSQL_DB_PORT']%>
