@@ -5,3 +5,7 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+file = File.new("Niche.txt", "r")
+while (niche = file.gets)
+	Idea.create(niche: niche, product: "Stuff")
+end
