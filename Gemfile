@@ -5,6 +5,7 @@ source 'http://mirror.ops.rhcloud.com/mirror/ruby/'
 gem 'rails', '4.2.4'
 # Use sqlite3 as the database for Active Record
 gem 'mysql2'
+gem 'rake', '1.5.0'
 gem 'font-awesome-rails'
 gem 'bootstrap-sass', '~> 3.3.5'
 # Use SCSS for stylesheets
