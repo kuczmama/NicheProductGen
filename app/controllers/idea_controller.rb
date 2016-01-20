@@ -4,4 +4,5 @@ class IdeaController < ApplicationController
 		@product = Product.order('rand()').limit(1).first.product
 	end
 
+	
 end
