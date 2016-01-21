@@ -9,6 +9,7 @@ gem 'rack', '1.6.4'
 gem 'mysql2'
 gem 'font-awesome-rails'
 gem 'bootstrap-sass', '~> 3.3.5'
+gem "twitter-bootstrap-rails"
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
