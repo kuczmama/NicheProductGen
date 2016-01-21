@@ -1,48 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Nicheproductgen</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-	<div class="site-wrapper">
-
-      <div class="site-wrapper-inner">
-
-        <div class="cover-container">
-
-          <div class="masthead clearfix">
-            <div class="inner">
-              <h3 class="masthead-brand"><%= link_to 'Nicheproduct.gen', root_path %></h3>
-              <nav>
-                <ul class="nav masthead-nav">
-                  	<li><a href="http://www.thebauerhour.com/">The Bauer Hour</a></li>
-                  	<li><a href="http://www.answrly.com/">Answrly</a></li>
-                </ul>
-              </nav>
-            </div>
-          </div>
-          <div class="inner cover">
-          	<% flash.each do |message_type, message| %>
-  				<div class="alert alert-<%= message_type %>"><%= message %></div>
-			<% end %>
-			<%= yield %>
-		</div>
-          <div class="mastfoot">
-            <div class="inner">
-              <p>Copyright Nicheproduct.gen <%= link_to "New Niche", new_niche_path %> <%= link_to "New Product", new_product_path %></p>
-            </div>
-          </div>
-
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Product <FONT COLOR="#FF0000">L</FONT><FONT COLOR="#FF5A00">O</FONT><FONT COLOR="#FFB400">K</FONT><FONT COLOR="#FFff00"></FONT><FONT COLOR="#A5ff00">O</FONT></a>
         </div>
-
+        <div id="navbar" class="navbar-collapse collapse">
+          <form class="navbar-form navbar-right">
+            <ul class="nav navbar-nav">
+              <li><a href="http://www.thebauerhour.com/">The Bauer Hour</a></li>
+              <li><a href="http://www.answrly.com/">Answrly</a></li>
+            </ul>
+          </form>
+        </div><!--/.navbar-collapse -->
       </div>
+    </nav>
+    <!-- / Navbar -->
 
-    </div>`
+      <!-- Content -->
+      <% flash.each do |message_type, message| %>
+          <%= message %>
+       <% end %>
+			 <%= yield %>
+       <!-- / Content -->
 
-
+    <footer class="footer">
+      <div class="container">
+        <p class="text-muted">Copyright ProductLoko.com <%= link_to "New Niche", new_niche_path %> <%= link_to "New Product", new_product_path %></p>
+      </div>
+    </footer>
 
 </body>
 </html>
