@@ -4,14 +4,14 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nicheproductgen</title>
+  <title>Product LOKO</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
     <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
+
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
@@ -29,7 +29,7 @@
             </ul>
           </form>
         </div><!--/.navbar-collapse -->
-      </div>
+
     </nav>
     <!-- / Navbar -->
 
@@ -40,11 +40,12 @@
 			 <%= yield %>
        <!-- / Content -->
 
+      <!-- Footer -->
     <footer class="footer">
       <div class="container">
         <p class="text-muted">Copyright ProductLoko.com <%= link_to "New Niche", new_niche_path %> <%= link_to "New Product", new_product_path %></p>
       </div>
     </footer>
-
+    <!-- / Footer -->
 </body>
 </html>
