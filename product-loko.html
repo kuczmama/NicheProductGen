@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Product LOKO : Business Idea Generatoro</title>
+	<script type="text/javascript">
+		const products = ["Products for", "Video series for", "Ebook for", "Audiobook for", "E-Classroom for", "Equipment Refurbishing Guide for", "Beginner's Guide for", "Intermediate Techniques for", "Seminars for", "Certification Program for", "Monetization Guide for", "'Becoming an Expert' Guide for", "'How to be Different' Guide for", "Equipment for", "'Becoming an Equipment Expert' for", "Advanced Equipment Guide for", "Podcasts for ", "Consulting Service for", "Cloud Storage Services for", "Internet Forums for", "Product Management Program for", "Telemarketing Service for", "T-Shirt Printing Service for", "Audit Program for", "Text Publication for", "Advertising Program for", "Android Application for", "iOS Application for", "Tablet Application for", "Storage Equipment for", "Organizational Tools for", "Fan Merchandise for", "Panel Video-Call Discussion for", "Lavish Networking Event for", "Charity Event for", "Training Events for", "Hands-on Labs for", "International Meetup Summit for", "Expos for", "North American Conference for", "Small-Scale Regional Trade Show for", "Diversity Seminar for",]
+		const niches = ["Pastry Chefs", "Bee Keepers", "Snake Handlers", "Muscle Car Owners", "Row Boat Fisherman", "Ice Fisherman", "High Heel Wearers", "Ice Cream Retailers", "Protein Consumers", "Rifle Owners", "Kindergarten Teachers", "Pistol Owners", "Revolver Connoisseurs", "Hair Dressers", "Male Hair Dressers", "Tablet Users", "Cover Bands", "Recently Divorced Couples", "Tool Kit Connoisseurs", "Watch Enthusiasts", "Tea Connoisseurs", "Foreign Language Learners", "Jewelers", "Shoe Repairers", "Home Exercise Connoisseurs", "Coffee Drinkers", "Espresso Drinkers", "Philippine Tourists", "RC Car Hobbyists", "Pencil Users", "Drummers", "Decorative Pillow Owners", "Kardashian Fans", "Bloggers", "Moms with  Adopted Sons", "Selfie Stick Owner", "Ping Pong Enthusiasts", "Podcasters", "Vitamin B Consumers", "Headphone Users", "Water Consumers", "People that Floss", "Pen Users", "Lottery Ticket Players", "Hawaii Users", "Fish Oil Experts", "Friends Forced into Playing Card Games", "People that Rap in Public", "Guys that Can't get Dates", "Dorm Room Inhabitants", "Lotion Connoisseurs", "Piranha Owners", "Psychedelic Users", "Mermaid Believers", "Sasquatch Hunters", "9/11 Conspiracy Theorists", "Fedora Wearers", "Social Media Addicts", "Bros that Love Cheap Beer", "Pocket Protector Folk", "Take the Condom Off Half-way Throughers", "Struggling Graphic Designers", "Crushed Ice Connoisseurs", "Slushy Experts", "Bros", "Gymnastics Coaches", "Bowling Leaguers", "Cactus Owners", "Pit Bull Owners", "Home Improvement Enthusiasts", "Trump Supporters", "Iranian Woodworkers", "People that Listen to Christmas Music Way Too Early", "Winter Gardeners", "Patio Enthusiasts", "Day Drinkers", "Indy 500 Goers", "Toothless Hillbillies", "Aspiring Rappers", "Trophy Wives", "Half-Asians", "People that Stay High", "Meatball Addicts", "Powerball Losers", "Couples that Got Married Way Too Early", "Birdhouse Manufacturers", "People That are too Active on Social Media", "Athletes with Newly Broken Bones", "Piano Players", "Candle Enthusiasts", "Digestive Issue Folk", "Momma's Boys", "People that Hate Recycling", "80's Hair Bands", "Supplement Lovers", "Vegans", "Frequent Flyers", "Bros with Anger Issues", "Guys that Cry", "People That Still Use Paper Maps", "Ukulele Players", "Self-Help Addicts", "Lighthouse Enthusiasts", "High School Quarterbacks", "AM Beer Drinkers", "Basic Girls That Love Fall", "Girls Seeking Social Media Fame", "New Drone Pilots", "People That Never Left Vegas", "Glove Enthusiasts", "Golf Glove Users", "Car Cleaners", "Window Cleaners", "Trampoline Enclosure Producers", "Storage Facility Owners Installing Security Cameras", "Engagement Ring Designers", "Binocular Users", "Dog Groomers", "Californian Cosplay Goers", "Rodeo Clowns", "Reptile Owners", "Juggle Emporium Owners", "Chewing Gum Manufacturers", "Custom Drawstring Bag Manufacturers", "Alpaca Farm Owners", "Brown Rice Lovers", "Golden-Era Boxing Fans", "Barcade Owners", "Skee-Ball Remanufacturing Companies ", "Meme Creators", "Bottled-Water Drinkers", "Night Stand Manufacturers", "One Night Standers", "Wearable Technology Bloggers", "Japanese Tourism Companies", "Dads with Moustaches", "Bounce House Rental Companies", "Interracial Wedding Planners", "Custom Trophy Manufacturers", "Men that Can't Go Within 100 Yards of a Playground", "Home Wood Shop Owners", "High School Beer Pong 'Experts'", "Female Fitness Bloggers", "Diabetic Bodybuilders", "Men Still Stuck in the 80's", "Mid-Western Music Festival Goers", "Apple Tree Owners", "Male Crock Pot Users", "Health-Conscious College Students", "13-15 Y/O EDM Fans", "Elderly Marijuana Users", "Elderly Folk that Collect Stamps", "Female Amateur Painters", "Competitive Gamers", "Freddie Mercury Fans", "Organizations Against Deforestation", "Hot Receptionists", "Bathroom Attendants", "Sexy Maids", "Gumball Machine Manufacturers", "Surfers from Auckland, NZ", "Live Action Role Players", "Horrible Roommates", "Aquarium Owners", "Policeman in Wayne County, Iowa", "90's European Electronic Enthusiasts", "Cyberbullies", "Stunt Doubles", "Background Actors", "Civil War Reenactment Actors", "Meat Smoker Owners", "Mentally Ill Celebrities", "Adult Fast Food Workers", "Virgins", "26 Year Olds that Live with Their Parents", "Female Nascar Fans", "People that Wear Umbrella Hats Seriously", "Die-Hard Astrology Believers", "Rock Garden Owners", "Inflatable Doll Owners", "Interracial Couples in Canada", "Guitar String Manufacturers", "Sanitary Engineers", "Midwestern Mail Clerks", "Theatrical Makeup Artists", "Marina Boat Charter Administrators", "Alcohol & Drug Abuse Assistance Coordinators", "Meter Mechanics", "Touchy Radiologists", "Glass Blowers", "Ushers and Lobby Attendants", "Prosthetic Technicians", "The One Hot Nurse", "Commercial Bakers", "Automotive Body Repair Workers", "Sperm Bank Workers", "Hunter S. Thompson Fans", "Stressed Indian Engineers", "Casting Couch Victims", "Foam Roller Users", "Sherbert Addicts", "High End Car Owners", "Rock Climbing Gym Owners", "NCAA Women's Volleyball Coaches", "Hispanic Sushi Chefs", "High School Computer Science Teachers", "Dudes that Keep the Sticker on the Hat", "PO Box Owners", "Young Adults that Love Swedish Furniture", "Waterproof Mattress Pad Users", "Aromatherapy Product Users", "Portable Air Compressor Owners", "Bros that Go to Gatlinburg, TN", "Swimming Pool Landscapers", "Bartending School Attendees", "Yoga Mat Manufacturers", "High School Soccer Goalies", "Portable Hot Tub Owners", "Elderly Binocular Users", "Dog Trainers", "Circus Elephant Owners", "African Mask Artists", "Model Train Collectors", "1-1 Guitar Instructors", "Middle School Orchestra Conductors", "Weight Loss Camp Goers", "College Ice Hockey Goalies", "Wedding Tent Rental Companies", "Gay Cruise Coordinators", "Solar Energy Enthusiasts", "Holocaust Deniers", "Zen Garden Owners", "Tropical Landscapers", "Recurve Bow Archers", "Adolescent Gardeners ", "Scrapbook Enthusiasts", "Mousepad Manufacturers", "Air Purification System manufacturers", "Quirky Guys that Play Drums", "Steel Drum Band Conductors", "Red Wine Experts", "Average Girls that Love Brunch", "Dads that Never Left College", "European Vandals", "Hot Girls with A Large Social Media Following", "Sheisty Advertising Agencies"]
+
+		function getIdea() {
+			let product = products[Math.floor(Math.random() * products.length)];
+			let niche = niches[Math.floor(Math.random() * niches.length)];
+			return product + " " + niche;
+		}
+
+		function setIdea() {
+			document.getElementById("idea").innerHTML = getIdea();
+		}
+	</script>
+</head>
+<style>
+	.generate-button:hover {
+		background: #004F7F;
+	}
+
+	.generate-button {
+		background: #009EFF;
+		color: #ffffff;
+		padding: 2rem;
+		width: 10rem;
+		margin-left: auto;
+		margin-right: auto; 
+		font-weight: 7; 
+		font-size: 1.5rem;
+	}
+
+	.shake:hover {
+	  animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+	  transform: translate3d(0, 0, 0);
+	  backface-visibility: hidden;
+	  perspective: 1000px;
+	  display: inline-block;
+	}
+
+	@keyframes shake {
+	  10%,
+	  90% {
+	    transform: translate3d(-1px, 0, 0);
+	  }
+	  20%,
+	  80% {
+	    transform: translate3d(2px, 0, 0);
+	  }
+	  30%,
+	  50%,
+	  70% {
+	    transform: translate3d(-4px, 0, 0);
+	  }
+	  40%,
+	  60% {
+	    transform: translate3d(4px, 0, 0);
+	  }
+	}
+</style>
+
+<body style="background: #ffffff;">
+	<div style="text-align: center;">
+		<h1 style="padding-bottom: 0px; margin-bottom: 0;">Product LOKO</h1>
+		<span>Business Idea Generator</span>
+		<h2 id="idea" style="color: #006FB2;"></h2>
+		<div class='generate-button shake' onClick="setIdea()">Generate!</button>
+	</div>
+	<script type="text/javascript">
+		window.onload = function () {
+			setIdea();
+		};
+	</script>
+</body>
+</html>
